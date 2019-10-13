@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tal.Insurance.Portal.Interface\Tal.Insurance.Portal.Interface.csproj" />
+    <ProjectReference Include="..\Tal.Insurance.Portal.Modal\Tal.Insurance.Portal.Modal.csproj" />
+  </ItemGroup>
+
+</Project>
