@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tal.Insurance.Portal.Web", "Tal.Insurance.Portal.Web\Tal.Insurance.Portal.Web.csproj", "{2FA39386-1176-4F4F-A715-7A7E5C3F3D50}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tal.Insurance.Portal.Interface", "Tal.Insurance.Portal.Interface\Tal.Insurance.Portal.Interface.csproj", "{4CC06B2A-0A71-4943-888E-D0324EE47D39}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tal.Insurance.Portal.Service", "Tal.Insurance.Portal.Service\Tal.Insurance.Portal.Service.csproj", "{27A584A8-8DDE-4F09-98A2-A071F2A6210D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tal.Insurance.Portal.Test", "Tal.Insurance.Portal.Test\Tal.Insurance.Portal.Test.csproj", "{57DB998C-CE94-4A20-9D7E-07E54AA83BAB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tal.Insurance.Portal.Modal", "Tal.Insurance.Portal.Modal\Tal.Insurance.Portal.Modal.csproj", "{0938C3A3-3A57-4FBE-932F-1EF840176110}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tal.Insurance.Portal.Repository", "Tal.Insurance.Portal.Dal\Tal.Insurance.Portal.Repository.csproj", "{71594390-907C-45EF-B51D-84EDBCC7665D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FA39386-1176-4F4F-A715-7A7E5C3F3D50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FA39386-1176-4F4F-A715-7A7E5C3F3D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FA39386-1176-4F4F-A715-7A7E5C3F3D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FA39386-1176-4F4F-A715-7A7E5C3F3D50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CC06B2A-0A71-4943-888E-D0324EE47D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC06B2A-0A71-4943-888E-D0324EE47D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC06B2A-0A71-4943-888E-D0324EE47D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC06B2A-0A71-4943-888E-D0324EE47D39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27A584A8-8DDE-4F09-98A2-A071F2A6210D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27A584A8-8DDE-4F09-98A2-A071F2A6210D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27A584A8-8DDE-4F09-98A2-A071F2A6210D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27A584A8-8DDE-4F09-98A2-A071F2A6210D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57DB998C-CE94-4A20-9D7E-07E54AA83BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57DB998C-CE94-4A20-9D7E-07E54AA83BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57DB998C-CE94-4A20-9D7E-07E54AA83BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57DB998C-CE94-4A20-9D7E-07E54AA83BAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0938C3A3-3A57-4FBE-932F-1EF840176110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0938C3A3-3A57-4FBE-932F-1EF840176110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0938C3A3-3A57-4FBE-932F-1EF840176110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0938C3A3-3A57-4FBE-932F-1EF840176110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71594390-907C-45EF-B51D-84EDBCC7665D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71594390-907C-45EF-B51D-84EDBCC7665D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71594390-907C-45EF-B51D-84EDBCC7665D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71594390-907C-45EF-B51D-84EDBCC7665D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53CEFE10-B917-407A-B375-09515BF439CF}
+	EndGlobalSection
+EndGlobal
