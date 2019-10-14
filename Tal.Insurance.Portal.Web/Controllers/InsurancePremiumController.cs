@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+using Tal.Insurance.Portal.Web.Model;
+
 namespace Tal.Insurance.Portal.Web.Controllers
 {
     [ApiController]
@@ -18,10 +20,15 @@ namespace Tal.Insurance.Portal.Web.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
-        public double Get()
+        [HttpGet]   
+
+        public CalculateResponse Get()
         {
-            return 44.33;
+            var rng = new Random();
+            return new CalculateResponse
+            {
+                calculatedPremium = 44.33
+            };
         }
     }
 }

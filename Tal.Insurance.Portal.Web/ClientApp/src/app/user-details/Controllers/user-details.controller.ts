@@ -3,17 +3,19 @@ import { UserDetailsModal } from "../Modal/user-details.modal";
 let angular = require('angular');
 
 export class UserDetailsController {
-    private userDetails: UserDetailsModal;
+    public userDetails: UserDetailsModal;
 
     private formErrors: {
         noError: boolean;
     };
 
     public static $inject = [
-        '$scope'
+        '$scope',
+        '$http',
+        '$window'
     ];
 
-    constructor(private $scope) {
+    constructor(private $scope, private $http, private $window) {
         this.userDetails = {
             firstName: '',
             lastName: '',
@@ -24,6 +26,20 @@ export class UserDetailsController {
         }
     }
 
-    SubmitUserDetails() {
+    CalculatePremium() {
+        
+            this.$http({
+                method: 'Get',
+                url: '/api/calculate',
+                data: JSON.stringify(this.userDetails)
+            }).then((response) => {
+                this.$window.alert(response.CalculatedPremium)
+            }, (response) => {
+                
+            }).finally(() => {
+
+            });
+        } 
+
     }
 }
