@@ -5,6 +5,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Tal.Insurance.Portal.Interface.PremiumService;
+using Tal.Insurance.Portal.Interface.Repository;
+using Tal.Insurance.Portal.Repository.Repository;
 using Tal.Insurance.Portal.Service.PremiumService;
 
 namespace Tal.Insurance.Portal.Web
@@ -30,6 +32,9 @@ namespace Tal.Insurance.Portal.Web
 
             //Dependency Injection
             services.AddSingleton<IPremiumService, PremiumService>();
+            services.AddSingleton<IUserDetailRepository, UserDetailRepository>();
+            services.AddSingleton<IOccupationRatingRepository, OccupationRatingRepository>();
+            services.AddSingleton<IOccupationRepository, OccupationRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

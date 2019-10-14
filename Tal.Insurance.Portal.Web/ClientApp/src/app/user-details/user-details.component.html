@@ -1,29 +1,29 @@
-<div class="dynamic-form" ng-controller="UserDetailsComponent as userDetailsCmp">
-  <form ng-submit="userDetailsCmp.continueToNextStep()">
-    <div class="form-group" >
+<div class="dynamic-form">
+  <form >
+    <div class="form-group">
       <label for="first-name">First Name</label>
-      <input type="text" ng-model="userDetailsCmp.userDetails.firstName" class="form-control" id="first-name" required>
+      <input type="text" [(ngmodel)]="userDetails.firstName" class="form-control" id="first-name" required>
     </div>
     <div class="form-group">
       <label for="last-name">Last Name</label>
-      <input type="text"  ng-model="userDetailsCmp.userDetails.lastName" class="form-control" id="last-name" required>
+      <input type="text" [(ngmodel)]="userDetails.lastName" class="form-control" id="last-name" required>
     </div>
     <div class="form-group">
       <label for="age">Age</label>
-      <input type="number"   ng-model="userDetailsCmp.userDetails.age" class="form-control" id="age" required>
+      <input type="number" [(ngmodel)]="userDetails.age" class="form-control" id="age" required>
     </div>
     <div class="form-group">
       <label for="dob">Date Of Birth</label>
-      <input type="date"  ng-model="userDetailsCmp.userDetails.occupation" class="form-control" id="dob" required>
+      <input type="date" (ngmodel)="userDetails.occupation" class="form-control" id="dob" required>
     </div>
     <div class="form-group">
       <label for="occupation">Occupation</label>
-      <input type="text"  ng-model="userDetailsCmp.userDetails.dateOfBirth" class="form-control" id="occupation" required>
+      <input type="text" (ngmodel)="userDetails.dateOfBirth" class="form-control" id="occupation" required>
     </div>
     <div class="form-group">
       <label for="sum-insured">Sum Insured</label>
-      <input type="text"  ng-model="userDetailsCmp.userDetails.sumInsured" class="form-control" id="sum-insured" required>
+      <input type="text" (ngmodel)="userDetails.sumInsured" class="form-control" id="sum-insured" required>
     </div>
-    <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+    <button type="submit" (click)="continueToNextStep(userDetails)" class="btn btn-lg btn-primary">Submit</button>
   </form>
 </div>

@@ -7,7 +7,7 @@ using Tal.Insurance.Portal.Modal.Modal;
 
 namespace Tal.Insurance.Portal.Repository.Repository
 {
-    class OccupationRepository : IOccupationRepository
+    public class OccupationRepository : IOccupationRepository
     {
         public List<Occupations> GetAllOccupations()
         {

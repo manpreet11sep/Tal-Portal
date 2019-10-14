@@ -15,8 +15,8 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     ],
     imports: [
         BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
-        HttpClientModule,
         FormsModule,
+        HttpClientModule,        
         RouterModule.forRoot([
             { path: '', component: UserDetailsComponent, pathMatch: 'full' }
         ])

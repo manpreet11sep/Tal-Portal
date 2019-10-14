@@ -6,7 +6,7 @@ using Tal.Insurance.Portal.Modal.Modal;
 
 namespace Tal.Insurance.Portal.Repository.Repository
 {
-    internal class UserDetailRepository : IUserDetailRepository
+    public class UserDetailRepository : IUserDetailRepository
     {
         public List<UserDetails> GetAllUsers()
         {

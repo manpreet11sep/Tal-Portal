@@ -1,6 +1,5 @@
 import { UserDetailsModal } from "../Modal/user-details.modal";
 
-let angular = require('angular');
 
 export class UserDetailsController {
     public userDetails: UserDetailsModal;
@@ -26,20 +25,20 @@ export class UserDetailsController {
         }
     }
 
-    CalculatePremium() {
-        
-            this.$http({
-                method: 'Get',
-                url: '/api/calculate',
-                data: JSON.stringify(this.userDetails)
-            }).then((response) => {
-                this.$window.alert(response.CalculatedPremium)
-            }, (response) => {
-                
-            }).finally(() => {
+    continueToNextStep() {
 
-            });
-        } 
+        this.$http({
+            method: 'Get',
+            url: '/api/calculate',
+            data: JSON.stringify(this.userDetails)
+        }).then((response) => {
+            this.$window.alert(response.CalculatedPremium)
+        }, (response) => {
 
+        }).finally(() => {
+
+        });
     }
+
 }
+
